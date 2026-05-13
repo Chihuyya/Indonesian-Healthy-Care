@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:background="@color/white" android:elevation="2dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_revert" app:tint="@color/black" android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Artikel" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_share" app:tint="@color/black" android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <ImageView android:layout_width="match_parent" android:layout_height="200dp" android:src="@android:color/darker_gray" android:scaleType="centerCrop"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cara Efektif Menjaga Kesehatan Jantung Sejak Dini" android:textColor="@color/black" android:textSize="22sp" android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:gravity="center_vertical">
+                    <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@android:drawable/ic_menu_myplaces" app:tint="@android:color/darker_gray"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dr. Daniel Michael" android:textColor="@android:color/darker_gray" android:textSize="12sp" android:layout_marginStart="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" • 17 Juni 2026" android:textColor="@android:color/darker_gray" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Menjaga kesehatan jantung sangat penting untuk dilakukan sejak usia muda. Beberapa cara yang dapat dilakukan antara lain adalah rutin berolahraga minimal 30 menit sehari, menjaga pola makan yang sehat dengan mengurangi konsumsi garam dan lemak jenuh, serta menghindari kebiasaan merokok.\n\nSelain itu, pastikan juga untuk mengelola stres dengan baik dan tidur yang cukup setiap malamnya. Jangan lupa untuk melakukan cek kesehatan rutin setidaknya satu tahun sekali agar kondisi tubuh selalu terpantau dengan baik." android:textColor="@color/black" android:textSize="15sp" android:lineSpacingExtra="8dp" android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

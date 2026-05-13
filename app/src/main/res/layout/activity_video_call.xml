@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202124"> <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@android:color/darker_gray" android:scaleType="centerCrop" android:alpha="0.5"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginTop="60dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dr. Daniel Michael" android:textColor="@color/white" android:textSize="24sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:45" android:textColor="@color/white" android:textSize="16sp" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView android:layout_width="100dp" android:layout_height="150dp" android:layout_alignParentEnd="true" android:layout_marginTop="160dp" android:layout_marginEnd="20dp" app:cardCornerRadius="16dp" app:cardElevation="8dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@android:color/white" android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="horizontal" android:gravity="center" android:padding="40dp">
+
+        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardBackgroundColor="#3C4043" android:layout_marginEnd="20dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:src="@android:drawable/ic_btn_speak_now" app:tint="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:id="@+id/btnEndCall" android:layout_width="70dp" android:layout_height="70dp" app:cardCornerRadius="35dp" app:cardBackgroundColor="#D32F2F" android:layout_marginEnd="20dp">
+            <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center" android:src="@android:drawable/ic_menu_close_clear_cancel" app:tint="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardBackgroundColor="#3C4043">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:src="@android:drawable/ic_menu_camera" app:tint="@color/white"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

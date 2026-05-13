@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_revert" app:tint="@color/black" android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reschedule" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select New Date" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/black"/>
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginTop="12dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:layout_width="65dp" android:layout_height="85dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_white_rounded_stroke" android:layout_marginEnd="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:textColor="@color/black" android:textStyle="bold" android:textSize="20sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fri" android:textColor="@android:color/darker_gray" android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="65dp" android:layout_height="85dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_blue_rounded" android:layout_marginEnd="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21" android:textColor="@color/white" android:textStyle="bold" android:textSize="20sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sat" android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="65dp" android:layout_height="85dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_white_rounded_stroke" android:layout_marginEnd="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22" android:textColor="@color/black" android:textStyle="bold" android:textSize="20sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sun" android:textColor="@android:color/darker_gray" android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select New Time" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/black" android:layout_marginTop="30dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="45dp" android:text="09:00 AM" android:gravity="center" android:background="@drawable/bg_white_rounded_stroke" android:textColor="@color/black" android:layout_marginEnd="8dp"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="45dp" android:text="10:00 AM" android:gravity="center" android:background="@drawable/bg_blue_rounded" android:textColor="@color/white" android:layout_marginEnd="8dp"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="45dp" android:text="11:00 AM" android:gravity="center" android:background="@drawable/bg_white_rounded_stroke" android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:background="@color/white" android:elevation="8dp">
+        <Button android:id="@+id/btnConfirmReschedule" android:layout_width="match_parent" android:layout_height="55dp" android:text="Confirm Reschedule" android:textAllCaps="false" android:textColor="@color/white" android:backgroundTint="#4285F4" app:cornerRadius="16dp" />
+    </LinearLayout>
+</LinearLayout>

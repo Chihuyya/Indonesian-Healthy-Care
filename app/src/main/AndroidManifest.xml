@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IndonesianHealthyCare">
+
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DoctorDetailActivity" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".SelectPackageActivity" />
+        <activity android:name=".PatientDetailsActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".DoctorListActivity" />
+        <activity android:name=".ChatRoomActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RescheduleActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".VideoCallActivity" />
+        <activity android:name=".PromoActivity" />
+        <activity android:name=".PharmacyActivity" />
+        <activity android:name=".ArticleActivity" />
+        <activity android:name=".WalletActivity" />
+        <activity android:name=".FavoriteActivity" />
+
+        <activity android:name=".ReviewBookingActivity" />
+
+    </application>
+
+</manifest>
